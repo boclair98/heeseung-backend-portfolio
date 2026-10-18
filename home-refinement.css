@@ -1,0 +1,50 @@
+/* OpenUI: a clear entry into the existing project evidence. */
+.skip-link{position:fixed;left:20px;top:12px;z-index:100;transform:translateY(-160%);padding:12px 18px;background:var(--deep);color:#fff;border-radius:8px}
+.skip-link:focus{transform:translateY(0)}
+:where(a,button,input,select,summary):focus-visible{outline:3px solid var(--deep);outline-offset:4px}
+.hero{min-height:700px;padding:132px 24px 64px;text-align:left;background:#fafbfc;border-bottom:1px solid var(--line)}
+.hero-inner{width:min(1120px,100%);max-width:none;margin-inline:auto}
+.hero .portfolio-kicker{margin:0 0 26px;font-size:15px;font-weight:700;line-height:1.5;letter-spacing:.02em;color:var(--deep)}
+.hero h1{max-width:1000px;font-size:clamp(48px,5.7vw,76px);line-height:1.18;letter-spacing:-.055em;margin:0 0 28px}
+.hero h1 strong{color:var(--deep)}
+.hero p{max-width:580px;font-size:18px;line-height:1.8;color:#526174;overflow-wrap:anywhere}
+.portfolio-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:32px}
+.portfolio-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 22px;border-radius:8px;font-size:15px;font-weight:700;line-height:1.4}
+.portfolio-actions .primary{background:var(--deep);color:white}
+.portfolio-actions .secondary{background:transparent;color:var(--deep);border:1px solid #bdccdf}
+.hero-socials{justify-content:flex-start;gap:12px;margin-top:28px}
+.hero-socials a{width:44px;height:44px;background:transparent;border:0;border-radius:8px}
+.hero .scroll-cue{margin-top:44px;color:#526174;font-size:12px}
+.section{padding-block:112px}
+.section-intro,.competency-card p,.project-desc{color:#526174}
+.competency-card,.project-card,.simple-panel,.education-entry,.timeline-entry{box-shadow:none}
+.project-card,.tech-card{min-width:0}
+.project-title,.project-desc,.detail-copy,.detail-lead{overflow-wrap:anywhere}
+.modal-close{width:44px;height:44px}
+@media(hover:hover) and (pointer:fine){
+  .portfolio-actions .primary:hover{background:#104ba8}
+  .portfolio-actions .secondary:hover{background:#edf3fc}
+}
+@media(max-width:760px){
+  .shell{width:calc(100% - 40px)}
+  .nav-wrap{top:12px;width:calc(100% - 24px);max-width:none}
+  .nav{overflow-x:auto;justify-content:flex-start;padding:5px;gap:0;border-radius:14px;scrollbar-width:thin}
+  .nav-dots{display:none}
+  .nav a{min-height:44px;display:inline-flex;align-items:center;padding:10px 13px;flex:none;font-size:13px}
+  .hero{min-height:auto;padding:116px 20px 52px}
+  .hero h1{font-size:clamp(36px,9.2vw,52px);line-height:1.24;letter-spacing:-.055em}
+  .hero .portfolio-kicker{font-size:13px;margin-bottom:22px}
+  .hero p{font-size:16px;line-height:1.8}
+  .hero p br{display:none}
+  .portfolio-actions{gap:10px;margin-top:26px}
+  .portfolio-actions a{padding-inline:16px}
+  .hero-socials{margin-top:22px}
+  .hero .scroll-cue{margin-top:28px}
+  .section{padding-block:72px}
+  .competency-card,.project-card{padding:25px}
+  .detail{padding-inline:24px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
